@@ -1,0 +1,34 @@
+﻿<Page x:Class="KhitrinovichUP1Texn.Pages.ReportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KhitrinovichUP1Texn.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Отчёты">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Style="{StaticResource CustomStackPanel}" Orientation="Horizontal" Grid.ColumnSpan="2" Height="48" Width="632" HorizontalAlignment="Left" Margin="84,0,0,0" Grid.Row="2">
+            <Button x:Name="QuantityCompletedRequestsButton" Content="Количество выполненных заявок" Style="{StaticResource CustomButton}" Click="QuantityCompletedRequestsButton_Click" Height="45" Width="198"/>
+            <Separator Opacity="0" Width="10"/>
+            <Button x:Name="AVGTimeCompletedRequestsButton" Content="Среднее время выполнения заявки" Style="{StaticResource CustomButton}" Click="AVGTimeCompletedRequestsButton_Click"/>
+            <Separator Opacity="0" Width="10"/>
+            <Button x:Name="StatisticsOnTypesOfFaultsButton" Content="Статистика по типам неисправностей" Style="{StaticResource CustomButton}" Click="StatisticsOnTypesOfFaultsButton_Click"/>
+        </StackPanel>
+        <Label x:Name="QuantityCompletedRequestsLabel" Style="{StaticResource AddLabel}" Grid.Row="1"  Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+        <Label x:Name="AVGTimeCompletedRequestsLabel" Style="{StaticResource AddLabel}" Grid.Row="1"  Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+
+        <StackPanel x:Name="StatisticsLabelsContainer" Style="{StaticResource CustomStackPanel}" Grid.Row="1" Grid.ColumnSpan="2"/>
+    </Grid>
+</Page>

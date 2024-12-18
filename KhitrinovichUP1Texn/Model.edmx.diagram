@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="420cce1c03f3431dbe301e21cecfb4ac" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Client" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Equipment" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.FaultType" Width="1.5" PointX="3" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Position" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Priority" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Request" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RequestLog" Width="1.5" PointX="7.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Status" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Technician" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Users" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__Request__client___48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Request__equipme__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Request__fault_t__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Technicia__posit__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Request__priorit__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Request__status___4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Request__technic__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__RequestLo__reque__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Users__Technicia__52593CB8" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
